@@ -14,7 +14,7 @@ export default function Produtores({ melhoresProdutores }) {
   const [exibeMensagem, setExibeMensagem] = useState(false);
 
   const nomeCompra = route.params?.compra.nome;
-  const timestampCompra = route.params.compra.timestamp
+  const timestampCompra = route.params?.compra.timestamp
 
   const lista = useProdutores(melhoresProdutores);
   const { tituloProdutores, mensagemCompra } = useTextos();
